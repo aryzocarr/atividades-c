@@ -1,0 +1,18 @@
+int main(void) {
+    int idade, telefone;
+    char* nome[100], rua[100];
+
+    printf("digite seu nome: ");
+    scanf("%s", &nome);
+
+    printf("digite sua idade: ");
+    scanf("%d", &idade);
+
+    printf("digite sua rua: ");
+    scanf("%s", &rua);
+
+    printf("digite seu telefone: ");
+    scanf("%d", &telefone);
+
+    printf("você se chama %s, você tem %d anos, mora na rua %s e seu telefone é %d .", nome, idade, rua, telefone);
+}
