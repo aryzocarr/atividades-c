@@ -1,0 +1,26 @@
+int main(void){
+    int num; 
+    printf("digite um número maior que 0 para calcular a sequência de Fibonacci: "); 
+    scanf("%d", &num); 
+
+    printf("a sequência de Fibonacci até %d é: ", num); 
+
+    int a = 0, b = 1; 
+
+    if (num >= 0) {
+        printf("%d", a); 
+    }
+    if (num >= 1) {
+        printf("%d", b); 
+    }
+
+    int proximo_fib = a + b;
+    while (proximo_fib <= num) {
+        printf("%d", proximo_fib);
+        a = b;
+        b = proximo_fib;
+        proximo_fib = a + b;
+    }
+    
+    return 0;
+}
