@@ -1,0 +1,33 @@
+int main(void) {
+  float preco;
+  int opcao, parcela;
+
+  printf("digite o preço total da compra: \n\n");
+  scanf("%f", &preco);
+
+  printf("escolha uma opção de pagamento:\n 1: à vista com 10%% de desconto \n "
+         "2: parcelado duas vezes com preço na etiqueta\n 3: parcelado de três a dez meses com 3%% de juros\n");
+  scanf("%d", &opcao);
+
+  if (opcao == 1) {
+    printf("o preço final é: %.2f\n", preco * 0.9);
+  } else if (opcao == 2) {
+    printf("o preço final é: %.2f\n", preco);
+  } else if (opcao == 3) {
+    if (preco >= 100) {
+      printf("deseja parcelar em quantas vezes?\n");
+      scanf("%d", &parcela);
+      if (parcela < 3 || parcela > 10) {
+        printf("inválido\n");
+      } else {
+        preco = ((preco/parcela) * 1.03) * parcela;
+        printf("o preço final da sua compra parcelada em %d meses é: %.2f\n", parcela, preco);
+        printf("Cada parcela será de: %.2f\n", preco / parcela);
+      }
+    } else {
+      printf("inválido\n");
+    }
+  }
+
+  return 0;
+}
