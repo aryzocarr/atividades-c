@@ -1,0 +1,10 @@
+int main(void) {
+    float fah, cel;
+
+    printf("diga a temperatura em fahrenheit: ");
+    scanf("%f", &fah);
+
+    cel = (fah - 32) * 5 / 9;
+
+    printf("a temperatura em celsius é: %.2f\n", cel);
+}
