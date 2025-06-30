@@ -9,10 +9,12 @@ int main(void){
 
     printf("digite um ultimo numero: \n");
     scanf("%d", &c);
-    
-    int maior = (a >= b && a >= c) ? a : ((b >= a && b >= c) ? b : c);
 
-    printf("o maior número é: %d\n", maior);
-
-    return 0;
+    if(a >= b && a >= c){
+         printf("o maior numero é: %d\n", a);
+        } else if (b >= a && b >= c) {
+            printf("o maior numero é: %d\n", b);
+        } else {
+            printf("o maior numero é: %d\n", c);
+        }
 }
