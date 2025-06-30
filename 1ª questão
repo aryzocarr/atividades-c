@@ -1,0 +1,11 @@
+int main() {
+  int numUm, numDois, soma = 0;
+    printf("digite o primeiro número: \n");
+    scanf("%d", &numUm);
+    printf("digite o segundo número: \n");
+    scanf("%d", &numDois);
+  
+  soma = numUm + numDois;
+  
+  printf("a soma é igual a: %d", soma);
+}
