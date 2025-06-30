@@ -1,0 +1,11 @@
+#include <math.h>
+
+int main(void){
+    float num;
+    printf("digite um numero: \n");
+    scanf("%f", &num);
+
+    num = sqrt(num);
+    
+    printf("a raiz quadrada do valor digitado é: %1.2f\n", num);
+}
