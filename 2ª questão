@@ -1,0 +1,11 @@
+int main(void) {
+    int num;
+
+    printf("digite um número\n");
+    scanf("%d", &num);
+    if (num % 2 == 0){
+        printf("o número é par\n");
+    } else {
+        printf("o número é ímpar\n");
+    }
+}
